@@ -1,53 +1,43 @@
-document.addEventListener('DOMContentLoaded', () => {
-    
-    // 1. Бургер меню
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav');
-    if (burger) {
-        burger.addEventListener('click', () => nav.classList.toggle('active'));
+// ===== МОБИЛЬНОЕ МЕНЮ =====
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav');
+if (burger && nav) {
+    burger.addEventListener('click', () => nav.classList.toggle('active'));
+}
+
+// ===== КАРУСЕЛЬ =====
+const slides = document.querySelectorAll('.slide');
+let current = 0;
+
+if (slides.length > 0) {
+    function showSlide(index) {
+        slides.forEach(s => s.classList.remove('active'));
+        slides[index].classList.add('active');
     }
 
-    // 2. Подсветка активной ссылки (ИСПРАВЛЕНО)
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const links = document.querySelectorAll('.nav a');
-    links.forEach(link => {
-        const href = link.getAttribute('href');
-        if (href === currentPage) {
-            link.classList.add('active');
-        }
+    document.querySelector('.next').addEventListener('click', () => {
+        current = (current + 1) % slides.length;
+        showSlide(current);
     });
 
-    // 3. ТЕМНАЯ ТЕМА (справа снизу)
-    const themeBtn = document.getElementById('theme-toggle');
-    const body = document.body;
-    
-    // Проверяем сохраненную тему
-    if (localStorage.getItem('theme') === 'dark') {
-        body.classList.add('dark-mode');
-        if (themeBtn) themeBtn.textContent = '☀️';
-    }
+    document.querySelector('.prev').addEventListener('click', () => {
+        current = (current - 1 + slides.length) % slides.length;
+        showSlide(current);
+    });
 
-    if (themeBtn) {
-        themeBtn.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-            
-            if (body.classList.contains('dark-mode')) {
-                themeBtn.textContent = '☀️';
-                localStorage.setItem('theme', 'dark');
-            } else {
-                themeBtn.textContent = '🌙';
-                localStorage.setItem('theme', 'light');
-            }
-        });
-    }
+    // Автопрокрутка каждые 5 секунд
+    setInterval(() => {
+        current = (current + 1) % slides.length;
+        showSlide(current);
+    }, 5000);
+}
 
-    // 4. Обработка формы
-    const form = document.getElementById('contactForm');
-    if (form) {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Ваша заявка принята! (Демонстрация формы)');
-            form.reset();
-        });
-    }
-});
+// ===== ОБРАБОТКА ФОРМЫ =====
+const form = document.querySelector('form');
+if (form) {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault(); // Остановить перезагрузку страницы
+        alert('Заявка успешно отправлена. Специалист свяжется с вами в рабочее время.');
+        form.reset(); // Очистить поля
+    });
+}

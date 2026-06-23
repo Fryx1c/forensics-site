@@ -3,63 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>АНО «Южный ЦСЭ» | Главная</title>
+    <meta name="description" content="АНО «Южный ЦСЭ» — независимая компьютерная технологическая экспертиза в Ростовской области.">
+    <title>Главная | АНО «Южный ЦСЭ»</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Шапка сайта -->
     <header>
         <div class="container header-inner">
-            <a href="index.html" class="logo">⚖️ АНО «Южный ЦСЭ»</a>
-            <button class="burger">☰</button>
+            <a href="index.html" class="logo">АНО «Южный ЦСЭ»</a>
+            <button class="burger" aria-label="Меню">☰</button>
             <nav class="nav">
-                <a href="index.html">Главная</a>
+                <a href="index.html" class="active">Главная</a>
                 <a href="services.html">Услуги</a>
-                <a href="about.html">О нас</a>
-                <a href="contact.html">Контакты</a>
+                <a href="about.html">О компании</a>
+                <a href="docs.html">Документы</a>
+                <a href="contacts.html">Контакты</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container hero-content">
-                <h1>Компьютерная технологическая экспертиза</h1>
-                <p>Профессиональное исследование цифровых устройств и данных для судебных разбирательств в Ростове-на-Дону.</p>
-                <a href="contact.html" class="btn btn-primary">Оставить заявку</a>
+        <!-- Карусель (Слайдер) -->
+        <section class="carousel">
+            <div class="carousel-track">
+                <div class="slide active" style="background-image: url('img/hero.png');">
+                    <div class="slide-content">
+                        <h1>Компьютерная технологическая экспертиза</h1>
+                        <p>Независимое исследование цифровых устройств и данных в соответствии с ФЗ-73 «О государственной судебно-экспертной деятельности».</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('img/services.png');">
+                    <div class="slide-content">
+                        <h1>Восстановление утраченных данных</h1>
+                        <p>Использование аппаратных комплексов для извлечения информации с поврежденных накопителей (HDD, SSD, Flash).</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('img/about.png');">
+                    <div class="slide-content">
+                        <h1>Сетевая криминалистика</h1>
+                        <p>Анализ сетевого трафика, выявление несанкционированного доступа и фиксация цифровых следов.</p>
+                    </div>
+                </div>
             </div>
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
         </section>
 
+        <!-- Секция с услугами (кратко) -->
         <section class="section">
             <div class="container">
-                <h2 class="section-title">Наши направления</h2>
+                <h2 class="section-title">Основные направления деятельности</h2>
                 <div class="grid">
                     <div class="card">
-                        <h3>💻 Экспертиза ПК</h3>
-                        <p>Анализ жестких дисков, восстановление удаленных файлов и исследование программного обеспечения.</p>
+                        <h3>Экспертиза носителей информации</h3>
+                        <p>Исследование жестких дисков, USB-накопителей и карт памяти. Установление фактов создания, копирования и удаления данных.</p>
                     </div>
                     <div class="card">
-                        <h3>📱 Мобильные устройства</h3>
-                        <p>Извлечение данных со смартфонов: звонки, сообщения, геолокация и история приложений.</p>
+                        <h3>Исследование программного обеспечения</h3>
+                        <p>Анализ исходного кода, выявление уязвимостей, проверка на наличие вредоносных модулей и несанкционированных функций.</p>
                     </div>
                     <div class="card">
-                        <h3>🔐 Кибербезопасность</h3>
-                        <p>Поиск уязвимостей, анализ сетевого трафика и выявление несанкционированного доступа.</p>
+                        <h3>Документальная экспертиза</h3>
+                        <p>Верификация электронных цифровых подписей (ЭЦП), анализ метаданных и проверка подлинности электронных документов.</p>
                     </div>
+                </div>
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="services.html" class="btn">Смотреть все услуги</a>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Подвал -->
     <footer>
         <div class="container">
-            <p>© 2026 АНО «Южный центр судебной экспертизы»</p>
-            <p>Разработано в рамках производственной практики</p>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>АНО «Южный ЦСЭ»</h4>
+                    <p>Автономная некоммерческая организация. Лицензия ФСБ России на деятельность по технической защите конфиденциальной информации.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <a href="index.html">Главная</a>
+                    <a href="services.html">Виды экспертиз</a>
+                    <a href="about.html">О лаборатории</a>
+                    <a href="docs.html">Нормативная база</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Реквизиты организации</a>
+                    <a href="#">Образец заключения</a>
+                    <a href="#">Порядок подачи заявления</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p>г. Ростов-на-Дону, ул. Таганрогская, д. 124</p>
+                    <p>+7 (863) 200-00-00</p>
+                    <p>info@yuzhny-cse.ru</p>
+                    <p>Пн-Пт: 09:00 – 18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">© 2026 АНО «Южный ЦСЭ». Сайт разработан в рамках производственной практики по ПМ.08.</div>
         </div>
     </footer>
-
-    <!-- Кнопка темы (справа снизу) -->
-    <button class="theme-toggle" id="theme-toggle">🌙</button>
 
     <script src="script.js"></script>
 </body>

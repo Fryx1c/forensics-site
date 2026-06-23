@@ -3,91 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О нас | АНО «Южный ЦСЭ»</title>
+    <title>О компании | АНО «Южный ЦСЭ»</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <div class="container header-inner">
-            <a href="index.html" class="logo">⚖️ АНО «Южный ЦСЭ»</a>
-            <button class="burger">☰</button>
+            <a href="index.html" class="logo">АНО «Южный ЦСЭ»</a>
+            <button class="burger" aria-label="Меню">☰</button>
             <nav class="nav">
                 <a href="index.html">Главная</a>
                 <a href="services.html">Услуги</a>
-                <a href="about.html">О нас</a>
-                <a href="contact.html">Контакты</a>
+                <a href="about.html" class="active">О компании</a>
+                <a href="docs.html">Документы</a>
+                <a href="contacts.html">Контакты</a>
             </nav>
         </div>
     </header>
 
     <main>
         <section class="section">
-            <div class="container">
-                <h2 class="section-title">О нашем отделе</h2>
-                
-                <div class="about-layout">
-                    <div class="about-text">
-                        <p>Отдел компьютерной технологической экспертизы АНО «Южный центр судебной экспертизы» специализируется на проведении независимых исследований в области информационных технологий с 2014 года.</p>
+            <div class="container content-with-sidebar">
+                <div class="main-content">
+                    <article>
+                        <header><h2 style="font-size: 2rem; color: #1a3c6e; margin-bottom: 20px;">Об организации</h2></header>
                         
-                        <p>Наша лаборатория оснащена современным сертифицированным оборудованием, включая аппаратные комплексы для создания бит-в-бит копий носителей информации (write-blockers), специализированное программное обеспечение для восстановления данных и анализа цифровых следов.</p>
-                        
-                        <h3>Наши принципы работы:</h3>
-                        <ul>
-                            <li>Строгое соблюдение процессуального законодательства РФ (ФЗ-73, УПК РФ, ГПК РФ, АПК РФ)</li>
-                            <li>Независимость и объективность выводов экспертов</li>
-                            <li>Полная конфиденциальность и защита данных заказчика</li>
-                            <li>Использование только сертифицированного аппаратно-программного обеспечения</li>
-                            <li>Двойной контроль качества всех экспертных заключений</li>
-                        </ul>
+                        <section>
+                            <h3 style="color: #1a3c6e; margin: 20px 0 10px; font-size: 1.4rem;">История и миссия</h3>
+                            <p>Автономная некоммерческая организация «Южный центр судебной экспертизы» (АНО «Южный ЦСЭ») основана в 2014 году. Основной целью организации является содействие правосудию путем проведения независимых, объективных и всесторонних исследований в области информационных технологий.</p>
+                            <p>Наша миссия — обеспечение высокого качества экспертных заключений, принимаемых судами всех инстанций РФ, и внедрение передовых методик цифровой криминалистики в экспертную практику.</p>
+                        </section>
 
-                        <h3>Области применения экспертиз:</h3>
-                        <ul>
-                            <li>Уголовные дела (киберпреступления, мошенничество, утечка информации)</li>
-                            <li>Гражданские споры (интеллектуальная собственность, трудовые конфликты)</li>
-                            <li>Арбитражные дела (корпоративные конфликты, защита коммерческой тайны)</li>
-                            <li>Административные правонарушения</li>
-                        </ul>
-                    </div>
-                    <div class="about-image">
-                        <img src="img/about.png" alt="Наша команда">
+                        <section>
+                            <h3 style="color: #1a3c6e; margin: 20px 0 10px; font-size: 1.4rem;">Материально-техническая база</h3>
+                            <p>Лаборатория центра оснащена современными программно-аппаратными комплексами, сертифицированными ФСБ России и ФСТЭК. Мы используем специализированное оборудование (Write-Blockers) для предотвращения изменения данных на исследуемых носителях, что гарантирует сохранность доказательной базы.</p>
+                            <p>Используемое ПО: EnCase Forensic, FTK Imager, X-Ways Forensics, Passware Kit Forensic, а также отечественные разработки (Мобильный Криминалист, Aceloader).</p>
+                        </section>
+
+                        <section>
+                            <h3 style="color: #1a3c6e; margin: 20px 0 10px; font-size: 1.4rem;">Квалификация экспертов</h3>
+                            <p>Все эксперты центра имеют высшее профильное образование (Информационная безопасность, Криминалистика) и регулярно проходят курсы повышения квалификации в аккредитованных учебных центрах. Стаж работы ключевых специалистов составляет более 10 лет.</p>
+                            <ul style="margin: 15px 0 20px 20px; color: #475569; list-style: disc;">
+                                <li style="margin-bottom: 8px;">Сертификаты IACIS, SANS GIAC.</li>
+                                <li style="margin-bottom: 8px;">Аттестация в системе Минюста РФ.</li>
+                                <li style="margin-bottom: 8px;">Регулярное участие в профильных конференциях.</li>
+                                <li>Владение методиками восстановления данных после физического повреждения.</li>
+                            </ul>
+                        </section>
+
+                        <footer style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #e2e8f0; font-size: 0.9rem; color: #64748b;">
+                            <p>Деятельность регулируется: <a href="https://www.consultant.ru/document/cons_doc_LAW_32049/" target="_blank" style="color: #1a3c6e; text-decoration: underline;">ФЗ-73 «О государственной судебно-экспертной деятельности в Российской Федерации»</a></p>
+                        </footer>
+                    </article>
+
+                    <h3 style="margin: 40px 0 20px; color: #1a3c6e; font-size: 1.5rem;">Фотогалерея лаборатории</h3>
+                    <div class="gallery">
+                        <figure class="gallery-item"><img src="img/gallery1.png" alt="Рабочее место"><figcaption class="gallery-caption">Рабочее место эксперта</figcaption></figure>
+                        <figure class="gallery-item"><img src="img/gallery2.png" alt="Оборудование"><figcaption class="gallery-caption">Аппаратный комплекс</figcaption></figure>
+                        <figure class="gallery-item"><img src="img/gallery3.png" alt="Серверная"><figcaption class="gallery-caption">Серверная комната</figcaption></figure>
+                        <figure class="gallery-item"><img src="img/gallery4.png" alt="Переговорная"><figcaption class="gallery-caption">Зал совещаний</figcaption></figure>
                     </div>
                 </div>
 
-                <!-- Статистика -->
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <span class="number">10+</span>
-                        <span class="label">Лет успешной работы</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="number">5000+</span>
-                        <span class="label">Проведенных экспертиз</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="number">100%</span>
-                        <span class="label">Принимаются судами</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="number">15</span>
-                        <span class="label">Сертифицированных экспертов</span>
-                    </div>
-                </div>
+                <aside class="sidebar">
+                    <h4>Наши достижения</h4>
+                    <ul style="margin-bottom: 20px;">
+                        <li><strong>5000+</strong> проведенных экспертиз</li>
+                        <li><strong>98%</strong> заключений приняты судом</li>
+                        <li><strong>12</strong> сертифицированных экспертов</li>
+                        <li><strong>10+</strong> лет успешной работы</li>
+                    </ul>
+
+                    <h4>Аккредитация</h4>
+                    <ul>
+                        <li><a href="#">Свидетельство Минюста РФ</a></li>
+                        <li><a href="#">Лицензия ФСБ России</a></li>
+                        <li><a href="#">Сертификат ISO/IEC 17025</a></li>
+                    </ul>
+                    
+                    <h4 style="margin-top: 20px;">Контакты</h4>
+                    <p style="font-size: 0.9rem; color: #475569;">
+                        г. Ростов-на-Дону<br>
+                        ул. Таганрогская, д. 124<br>
+                        +7 (863) 200-00-00
+                    </p>
+                </aside>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2026 АНО «Южный центр судебной экспертизы»</p>
-            <p>г. Ростов-на-Дону, ул. Таганрогская</p>
-            <p>📞 +7 (863) 000-00-00 | ✉️ info@yuzhny-cse.ru</p>
+            <div class="footer-grid">
+                <div class="footer-col"><h4>АНО «Южный ЦСЭ»</h4><p>Лицензия ФСБ России на деятельность по технической защите конфиденциальной информации.</p></div>
+                <div class="footer-col"><h4>Навигация</h4><a href="index.html">Главная</a><a href="services.html">Виды экспертиз</a><a href="about.html">О лаборатории</a><a href="docs.html">Нормативная база</a><a href="contacts.html">Контакты</a></div>
+                <div class="footer-col"><h4>Информация</h4><a href="#">Политика конфиденциальности</a><a href="#">Реквизиты организации</a><a href="#">Образец заключения</a></div>
+                <div class="footer-col"><h4>Контакты</h4><p>г. Ростов-на-Дону, ул. Таганрогская, д. 124</p><p>+7 (863) 200-00-00</p><p>info@yuzhny-cse.ru</p></div>
+            </div>
+            <div class="footer-bottom">© 2026 АНО «Южный ЦСЭ». Сайт разработан в рамках производственной практики.</div>
         </div>
     </footer>
-
-    <!-- Кнопка темы (справа снизу) -->
-    <button class="theme-toggle" id="theme-toggle">🌙</button>
-
     <script src="script.js"></script>
 </body>
 </html>

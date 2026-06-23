@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | АНО «Южный ЦСЭ»</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo">АНО «Южный ЦСЭ»</a>
+            <button class="burger" aria-label="Меню">☰</button>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="services.html">Услуги</a>
+                <a href="about.html">О компании</a>
+                <a href="docs.html">Документы</a>
+                <a href="contacts.html" class="active">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                
+                <div class="contacts-wrapper">
+                    <!-- Информация -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h4>Адрес офиса</h4>
+                            <p>г. Ростов-на-Дону, ул. Таганрогская, д. 124, офис 305 (3 этаж)</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Телефон</h4>
+                            <p>
+                                <a href="tel:+78632000000">+7 (863) 200-00-00</a> (Приёмная)<br>
+                                <a href="tel:+78632000001">+7 (863) 200-00-01</a> (Отдел экспертиз)
+                            </p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Электронная почта</h4>
+                            <p>
+                                <a href="mailto:info@yuzhny-cse.ru">info@yuzhny-cse.ru</a><br>
+                                <a href="mailto:expert@yuzhny-cse.ru">expert@yuzhny-cse.ru</a>
+                            </p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Режим работы</h4>
+                            <p>Пн-Пт: 09:00 – 18:00<br>Сб-Вс: выходной</p>
+                        </div>
+                    </div>
+
+                    <!-- Карта -->
+                    <div class="map-container">
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=39.7015%2C47.2221&z=15&pt=39.7015%2C47.2221%2Cpm2rdm" allowfullscreen style="width: 100%; height: 100%; border: none;"></iframe>
+                    </div>
+                </div>
+
+                <!-- Форма -->
+                <div class="form-box">
+                    <h3 style="text-align: center; margin-bottom: 25px; color: #1a3c6e; font-size: 1.5rem;">Заявка на проведение экспертизы</h3>
+                    <form>
+                        <div class="form-group">
+                            <label>ФИО заявителя или название организации *</label>
+                            <input type="text" required placeholder="Иванов Иван Иванович">
+                        </div>
+                        <div class="form-group">
+                            <label>Контактный телефон *</label>
+                            <input type="tel" required placeholder="+7 (999) 000-00-00">
+                        </div>
+                        <div class="form-group">
+                            <label>Тип обращения</label>
+                            <select>
+                                <option>Постановление суда / следователя</option>
+                                <option>Договор с юридическим лицом</option>
+                                <option>Частный запрос (физическое лицо)</option>
+                                <option>Консультация эксперта</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Краткое описание задачи</label>
+                            <textarea rows="4" placeholder="Укажите тип носителей, цели исследования, желаемые сроки..."></textarea>
+                        </div>
+                        <button type="submit" class="btn">Отправить запрос</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h4>АНО «Южный ЦСЭ»</h4><p>Лицензия ФСБ России на деятельность по технической защите конфиденциальной информации.</p></div>
+                <div class="footer-col"><h4>Навигация</h4><a href="index.html">Главная</a><a href="services.html">Виды экспертиз</a><a href="about.html">О лаборатории</a><a href="docs.html">Нормативная база</a><a href="contacts.html">Контакты</a></div>
+                <div class="footer-col"><h4>Информация</h4><a href="#">Политика конфиденциальности</a><a href="#">Реквизиты организации</a><a href="#">Образец заключения</a></div>
+                <div class="footer-col"><h4>Контакты</h4><p>г. Ростов-на-Дону, ул. Таганрогская, д. 124</p><p>+7 (863) 200-00-00</p><p>info@yuzhny-cse.ru</p></div>
+            </div>
+            <div class="footer-bottom">© 2026 АНО «Южный ЦСЭ». Сайт разработан в рамках производственной практики.</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

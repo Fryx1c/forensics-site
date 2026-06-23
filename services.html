@@ -7,69 +7,93 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <div class="container header-inner">
-            <a href="index.html" class="logo">⚖️ АНО «Южный ЦСЭ»</a>
-            <button class="burger">☰</button>
+            <a href="index.html" class="logo">АНО «Южный ЦСЭ»</a>
+            <button class="burger" aria-label="Меню">☰</button>
             <nav class="nav">
                 <a href="index.html">Главная</a>
-                <a href="services.html">Услуги</a>
-                <a href="about.html">О нас</a>
-                <a href="contact.html">Контакты</a>
+                <a href="services.html" class="active">Услуги</a>
+                <a href="about.html">О компании</a>
+                <a href="docs.html">Документы</a>
+                <a href="contacts.html">Контакты</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero" style="padding: 60px 0;">
-            <div class="container hero-content">
-                <h1>Виды экспертиз</h1>
-                <p>Профессиональное исследование цифровых устройств и данных</p>
+        <section class="section" style="background: #1a3c6e; color: #fff; text-align: center; padding: 60px 0;">
+            <div class="container">
+                <h1 style="font-size: 2.5rem;">Виды проводимых экспертиз</h1>
+                <p style="font-size: 1.2rem; max-width: 800px; margin: 15px auto 0;">В соответствии с приказами Министерства юстиции РФ и профильными ГОСТами</p>
             </div>
         </section>
 
         <section class="section">
-            <div class="container">
-                <div class="grid">
-                    <div class="card">
-                        <h3>1. Компьютерно-техническая</h3>
-                        <p>Исследование ПК, ноутбуков и серверов. Установление фактов копирования, удаления и модификации данных.</p>
-                    </div>
-                    <div class="card">
-                        <h3>2. Сетевая криминалистика</h3>
-                        <p>Анализ журналов доступа, перехват пакетов данных (в рамках закона) и отслеживание атак.</p>
-                    </div>
-                    <div class="card">
-                        <h3>3. Документальная экспертиза</h3>
-                        <p>Проверка электронных документов на подлинность, наличие ЭЦП и метаданных авторства.</p>
-                    </div>
-                    <div class="card">
-                        <h3>4. Мобильные устройства</h3>
-                        <p>Извлечение данных со смартфонов и планшетов: история звонков, SMS, переписки в мессенджерах, GPS-треки.</p>
-                    </div>
-                    <div class="card">
-                        <h3>5. Восстановление данных</h3>
-                        <p>Восстановление удаленной информации с жестких дисков, SSD, USB-флешек и карт памяти.</p>
-                    </div>
-                    <div class="card">
-                        <h3>6. Криптография</h3>
-                        <p>Анализ алгоритмов шифрования, проверка ЭЦП, оценка стойкости средств защиты информации.</p>
+            <div class="container content-with-sidebar">
+                <div class="main-content">
+                    <div class="grid">
+                        <div class="card">
+                            <h3>1. Компьютерно-техническая экспертиза</h3>
+                            <p>Исследование аппаратного обеспечения ПК и периферийных устройств. Установление факта использования конкретного компьютера, определение его конфигурации и наличия скрытых разделов на накопителях.</p>
+                        </div>
+                        <div class="card">
+                            <h3>2. Экспертиза мобильных устройств</h3>
+                            <p>Извлечение данных со смартфонов (iOS, Android). Анализ журналов вызовов, SMS, переписок в мессенджерах (WhatsApp, Telegram), геолокационных данных и кэша приложений.</p>
+                        </div>
+                        <div class="card">
+                            <h3>3. Анализ цифровых носителей</h3>
+                            <p>Работа с поврежденными HDD, SSD, USB-флешками. Создание бит-в-бит копий (образа диска) с использованием программно-аппаратных комплексов Write-Blockers для сохранения целостности доказательной базы.</p>
+                        </div>
+                        <div class="card">
+                            <h3>4. Экспертиза программного обеспечения</h3>
+                            <p>Анализ исходного кода программных продуктов, исследование баз данных, выявление уязвимостей в веб-приложениях, проверка на наличие вредоносных модулей и несанкционированных функций.</p>
+                        </div>
+                        <div class="card">
+                            <h3>5. Сетевая криминалистика</h3>
+                            <p>Исследование сетевого трафика (Traffic Analysis), анализ дампов пакетов, выявление точек несанкционированного доступа (НСД), отслеживание маршрутов передачи данных и фиксация сетевой активности.</p>
+                        </div>
+                        <div class="card">
+                            <h3>6. Документальная экспертиза</h3>
+                            <p>Проверка подлинности электронных документов, анализ метаданных (EXIF, авторство, история изменений), верификация электронных цифровых подписей (ЭЦП) в форматах XML, PDF, DOC.</p>
+                        </div>
                     </div>
                 </div>
+
+                <aside class="sidebar">
+                    <h4>Нормативная база</h4>
+                    <ul>
+                        <li><a href="https://www.consultant.ru/document/cons_doc_LAW_32049/" target="_blank">ФЗ-73 «О судебной экспертизе»</a></li>
+                        <li><a href="https://docs.cntd.ru/document/1200175294" target="_blank">ГОСТ 34.602-2020</a></li>
+                        <li><a href="http://www.consultant.ru/document/cons_doc_LAW_34481/" target="_blank">УПК РФ (Глава 27)</a></li>
+                        <li><a href="http://www.consultant.ru/document/cons_doc_LAW_39570/" target="_blank">ГПК РФ (Статьи 79-87)</a></li>
+                    </ul>
+                    
+                    <h4 style="margin-top: 25px;">Порядок проведения</h4>
+                    <p style="font-size: 0.95rem; color: #475569; line-height: 1.6; margin-bottom: 15px;">
+                        1. Подача заявления.<br>
+                        2. Заключение договора.<br>
+                        3. Передача материалов (составление акта).<br>
+                        4. Проведение исследования (до 30 дней).<br>
+                        5. Выдача экспертного заключения.
+                    </p>
+                    <a href="contacts.html" class="btn" style="display: block; text-align: center;">Оставить заявку</a>
+                </aside>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2026 АНО «Южный центр судебной экспертизы».</p>
+            <div class="footer-grid">
+                <div class="footer-col"><h4>АНО «Южный ЦСЭ»</h4><p>Лицензия ФСБ России на деятельность по технической защите конфиденциальной информации.</p></div>
+                <div class="footer-col"><h4>Навигация</h4><a href="index.html">Главная</a><a href="services.html">Виды экспертиз</a><a href="about.html">О лаборатории</a><a href="docs.html">Нормативная база</a><a href="contacts.html">Контакты</a></div>
+                <div class="footer-col"><h4>Информация</h4><a href="#">Политика конфиденциальности</a><a href="#">Реквизиты организации</a><a href="#">Образец заключения</a></div>
+                <div class="footer-col"><h4>Контакты</h4><p>г. Ростов-на-Дону, ул. Таганрогская, д. 124</p><p>+7 (863) 200-00-00</p><p>info@yuzhny-cse.ru</p></div>
+            </div>
+            <div class="footer-bottom">© 2026 АНО «Южный ЦСЭ». Сайт разработан в рамках производственной практики.</div>
         </div>
     </footer>
-
-    <!-- КНОПКА ТЕМЫ (обязательно с id="theme-toggle") -->
-    <button class="theme-toggle" id="theme-toggle">🌙</button>
-
     <script src="script.js"></script>
 </body>
 </html>
